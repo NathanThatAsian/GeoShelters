@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+  <meta charset="UTF-8">
+
+  <title>Bauman Science Login</title>
+      <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">  Geo</span> Shelters</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admins.html">Admins</a></li>
+            <li><a href="goals.html">Goals</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Trocchi');
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+  body{
+  font-family: 'Overpass', sans-serif;
+  padding:0;
+  margin:0;
+}
+
+/* Global */
+.container{
+  width:100%;
+  margin:auto;
+  overflow:hidden;
+}
+
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#d35400 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#d35400;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+.body{
+    position: fixed; 
+    overflow-y: scroll; 
+
+    width: 100%;
+    top: -20px;
+    left: -20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    
+}
+
+.header{
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 255px);
+    
+}
+
+.header div{
+    float: left;
+    color: #fff;
+    font-family: 'Trocchi', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.header div span{
+    color: #F29E20 !important;
+}
+
+.login{
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    
+}
+
+.login input[type=text]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Nexa', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.login input[type=password]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Nexa', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.login input[type=button]{
+    width: 260px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Nexa', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+    opacity: 0.8;
+}
+
+.login input[type=button]:active{
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+.login {
+  background: #606060;
+  border: 0px solid #42464b;
+  border-radius: 6px;
+  height: 190px;
+  margin: 20px auto 0;
+  width: 256px;
+  opacity: 0.9;
+}
+
+body {background-image: url("https://i.imgur.com/1aAinfA.png");
+        background-size: cover;
+        background-repeat: none;
+
+    </style>
+</head>
+        <br>
+        <form name="login">
+        <div class="login">
+                <input type="text" placeholder="Username" name="userid"><br>
+                <input type="password" placeholder="Password" name="pswrd"><br>
+                <input type="button" onclick="check(this.form)" value="Login"/>
+                <input type="button" onclick="window.open('https://i.redd.it/cfprqrot42oz.jpg')" value="Forgot Password?"
+
+
+            
+        
+        </div>
+</form>
+
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "user" && form.pswrd.value == "pass")
+  {
+    window.open('https://g.redditmedia.com/D_W_OgbWeeFrg7X7RDgpue8jeuoIfJ8_5cQKrXIcWGQ.gif?w=576&fm=mp4&mp4-fragmented=false&s=28bd3ffb49c3c715b25053e19e44cf18')
+  }
+ else
+ {
+   alert("Wrong username or password!")
+  }
+}
+
+
+
+</script>
+</body>
+</html>
